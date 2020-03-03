@@ -33,7 +33,7 @@ public class Topico {
 	private Curso curso;
 	
 	@OneToMany(mappedBy = "topico")
-	private List<Resposta> respostas = new ArrayList<>();
+	private List<Resposta> respostas = new ArrayList<Resposta>();
 	
 	public Topico() {
 		

@@ -23,6 +23,18 @@ public class Resposta {
 	@ManyToOne
 	private Usuario autor;
 	private Boolean solucao = false;
+	
+	public Resposta() {
+		
+	}
+	
+	public Resposta(String mensagem, Topico topico) {
+		this.mensagem = mensagem;
+		this.topico = topico;
+		
+	}
+	
+	
 
 	@Override
 	public int hashCode() {
